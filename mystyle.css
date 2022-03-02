@@ -1,0 +1,88 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .calculator-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: gray;
+    border: 4px solid black;
+    border-radius: 4px;
+  }
+
+.SC {
+  background-color: darkgrey;
+  height: 50px;
+  width: 400px;
+  font-weight: 50px;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 25px;
+}
+
+  .output {
+    display: flex;
+    background-color: lightblue;
+    height: 100px;
+    width: 400px;
+    grid-column: 1 / -1;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    
+  }
+
+  .output .previous {
+    color: red;
+    padding: 10px;
+    font-size: 1.4rem;
+  }
+
+  .output .current {
+    color: green;
+    padding: 10px;
+    font-size: 2.5rem;
+  }
+  
+  .button-grid {
+  width: 400px;
+  height: 250px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 25%);
+  margin: 25px;
+  }
+
+  .button-grid > button {
+    cursor: pointer;
+    font-size: 1em;
+    border: 1px solid black;
+    outline: none;
+    height: 50px;
+  }
+
+  .button-grid > button:hover{
+    background-color: orange;
+  }
+
+  .op {
+    background-color: pink;
+  }
+  .ope {
+    background-color: green;
+  }
+
+  .span-two {
+    grid-column: span 2;
+  }
